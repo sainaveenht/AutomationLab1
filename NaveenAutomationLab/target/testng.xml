@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 
+ <listeners>
+ <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"></listener>
+ </listeners>
+ <parameter name="city" value="bangalore"></parameter>
+ 
+  <test thread-count="5" name="FirstAutomation1">
+    <classes>
+      <class name="com.qa.testcase.HomePageTest"/>
+      <class name="com.qa.testcase.LoginPageTest"/>
+      <class name="com.qa.testcase.ContactsPageTest"/>
+    </classes>
+  </test> <!-- FirstAutomation1 -->
+</suite> <!-- Suite -->
